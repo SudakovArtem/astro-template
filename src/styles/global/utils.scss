@@ -1,0 +1,31 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-from-tablet {
+  @include tablet-desktop {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
+  }
+}
+
+.hidden-desktop-only {
+  @include desktop {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
+  }
+}
+
+.hidden-tablet-only {
+  @include tablet {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
+  }
+}
+
+.hidden-mobile-only {
+  @include mobile {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
+  }
+}

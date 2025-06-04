@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@types": ["src/types"],
+      "@components/*": ["src/components/*.astro"],
+      "@layouts/*": ["src/layouts/*.astro"],
+      "@ui/*": ["src/ui/*.astro"],
+      "@images/*": ["src/images/*"]
+    },
+    "types": ["astro/types", "@types/node"],
+    "typeRoots": ["src/types"]
+  }
+}

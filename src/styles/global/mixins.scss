@@ -1,0 +1,114 @@
+@mixin vp-1919 {
+  @media (max-width: ($vp-1920 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1536 {
+  @media (max-width: ($vp-1536)) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @media (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-393 {
+  @media (max-width: ($vp-393 - 1px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet {
+  @media screen and (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $vp-768) and (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet-desktop {
+  @media screen and (min-width: $vp-768) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $vp-1024) {
+    @content;
+  }
+}
+
+// ------
+
+@mixin hover-focus {
+  &:focus-visible {
+    @content;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin focus {
+  &:focus-visible {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &:disabled,
+  &[inert],
+  &.is-disabled {
+    @content;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}

@@ -1,0 +1,28 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-nero: #232323;
+
+// Высота без учета bar в android, ios
+// Для устранения бага в андроид @see https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+$height-100vh: calc(100 * var(--vh, 1vh));
+
+$ff-arial: "Arial", sans-serif;
+$fz-default: 10px;
+
+$vp-1920: 1920px;
+$vp-1536: 1536px;
+$vp-1024: 1024px;
+$vp-768: 768px;
+$vp-393: 393px;
+
+$transition: 0.3s ease;
